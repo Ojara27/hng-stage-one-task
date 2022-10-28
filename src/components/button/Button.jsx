@@ -5,9 +5,7 @@ function Button(props) {
   return (
     <>
         <div className="button">
-            <button>
-                <a href={link}>{title}</a>
-            </button>
+                <a href={link} className='btn__link'> {title}</a>
         </div>
     </>
   )

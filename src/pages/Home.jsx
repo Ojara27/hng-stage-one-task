@@ -1,6 +1,10 @@
 import React from 'react'
 import Button from '../components/button/Button'
 import profileImg from '../images/profile.jpg'
+import slackIcon from '../images/slack.png'
+import githubIcon from '../images/github.png'
+import Zuri  from '../images/zuri.png'
+import I4G from '../images/I4G.png'
  function Home() {
   return (
     <>
@@ -15,7 +19,8 @@ import profileImg from '../images/profile.jpg'
             </div>
 
             <div className="profile__name">
-                <h1>Ojara</h1>
+                <h1 id='twitter'>Ojara</h1>
+                <h3 id='slack' style={{display:'none'}}>Ojara</h3>
             </div>
         </div>
         <Button
@@ -53,6 +58,40 @@ import profileImg from '../images/profile.jpg'
             title='Design Books'
             id='book__design'
         />
+
+        <div className="social__links">
+            <div className="slack_link">
+                <a href="">
+                    <img 
+                        src={slackIcon}
+                        alt=""
+                    />
+                </a>
+            </div>
+
+            <div className="gitHub__link">
+               <a href="https://github.com/Ojara27/hng-stage-one-task">
+                    <img 
+                        src={githubIcon}
+                        alt=""
+                    />
+               </a>
+            </div>
+        </div>
+
+        <div className="sponsor-links">
+            <img 
+                src={Zuri}
+                alt="" 
+            />
+
+            <p>HNG Internship 9 Frontend Task</p>
+
+            <img 
+                src={I4G}
+                alt="" 
+            />
+        </div>
     </div>    
     </>
   )
